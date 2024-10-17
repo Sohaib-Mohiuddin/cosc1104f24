@@ -32,3 +32,4 @@ A bar graph showing each student's average grade.
 (Optional) A motivational quote for students.
 (Optional) A grayscale certificate for the top student.
 '''
+
