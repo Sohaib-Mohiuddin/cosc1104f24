@@ -1,0 +1,20 @@
+version: "3.9"  # Use the latest Compose version
+
+services:
+  python-dev:
+    container_name: python-dev
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        BUILDKIT_BUILD: 1
+    restart: always  # Always restart if the container stops
+    networks:
+      - nginx_network
+    volumes:
+      - .:/app  # Mount the local "app" folder to the container for persistent code
+
+networks:
+  nginx_network:
+    driver: overlay
+    external: true
