@@ -9,10 +9,13 @@ and humidity.
 """
 
 import requests
-from 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Load environment variables from .env file
 
 # Constants
-API_KEY = "your_api_key_here"  # Replace with your actual API key
+API_KEY = "ADD_API_KEY_HERE"  # Replace with your actual API key
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
 def get_weather_data(city_name):
