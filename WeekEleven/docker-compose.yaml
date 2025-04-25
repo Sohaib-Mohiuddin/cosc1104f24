@@ -1,0 +1,23 @@
+services:
+  flask-app-demo:
+    # image: webdev-app
+    container_name: flask-app-demo
+    build:
+      # context: .
+      dockerfile: Dockerfile
+      args:
+        BUILDKIT_BUILD: 1
+    restart: always
+    volumes:
+      - .:/app
+    ports:
+      - 5555:5555
+    # env_file:
+    #   - ./webdev-app/.env
+    networks:
+      - nginx_network
+
+networks:
+  nginx_network:
+    driver: overlay
+    external: true
