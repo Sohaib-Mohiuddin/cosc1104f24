@@ -1,8 +1,40 @@
-my_name = 'Sohaib'
-my_age = 67
+# This prints 'Hello World' to the CLI
+'''
+blablablal
+blablabla
+blablabla
+'''
 
-my_info = f'Hello { my_name }! Your age is { my_age }! You are very old!'.lower()
+# Lecture Class
+# a = 10
+# print('Hello World!')
+# print(a)
 
-my_info1 = 'Hello {}, your age is {}'.format(my_name, my_age)
+# Lab Class
+a = 10
+b = 10
+c = 20
+k = 13 % 5
 
-print(my_info1)
+a = c
+e = (a == b)
+
+f = 'Hello COSC1104!'
+g = ' My name is Sohaib Mohiuddin.'
+h = f'{ f + g }'
+d = f'a + b = { a + b }'
+l = '*' * 20
+
+# m = int(input('Please enter a number: '))
+# print(type(m))
+
+# print(d)
+# print(e)
+# print(h, a)
+# print(k)
+# print(l)
+
+if (a == b):
+    print('They are equal')
+else:
+    print('They are not equal!')
